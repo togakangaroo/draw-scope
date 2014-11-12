@@ -1,0 +1,29 @@
+{
+  "name": "draw-scope",
+  "version": "0.0.0",
+  "authors": [
+    "George Mauer <gmauer@gmail.com>"
+  ],
+  "description": "draw scope of any variable",
+  "main": "index.html",
+  "keywords": [
+    "d3",
+    "function",
+    "teaching"
+  ],
+  "license": "MIT",
+  "homepage": "todo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.13",
+    "lodash": "~2.4.1",
+    "q": "~2.0.2"
+  }
+}

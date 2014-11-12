@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/scripts/draw-scope.css">
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <section>
+    <h1>Javascript Function Scope</h1>
+    <p>
+      This is a little application ot demonstrate <b>function scope</b> in javascript. A good way to do visualize it is as a landscape defined by the left-hand indentation level of the code. With bridges over every valley
+    </p>
+    <p>
+      To find out what variables are in scope on a given line move uphill. From that line simultaneously in both direction. Never go downhill (take the bridge over the valley). Every variable and parameter declaration that you walk past will be in scope. Once you get to the top add in all properties of the global <code>window</code> object, this will be everything in your current scope!
+    </p>
+    <p>
+      Click the next scope button to highlight the next scope up from the selected line. This will work with any code in the below <code>&lt;pre&gt;</code> block. To change the start line or the columns to highlight, modify the variables at the top of the coffeescript tab.
+    </p>
+  </section>
+
+  <div class=actions>
+    <button class='next-scope' disabled>Next Scope</button>
+  </div>
+  
+  <div id=code><pre>
+var doStuff = function(){
+    var informal = "Hi";
+    
+    var sayHi = function() {
+        var formal = "Hello";
+        console.log(informal);
+    }
+    var sayBye = function() {
+        var formal = "Good Bye";
+    }
+    
+    sayHi();
+    console.log(informal);
+    console.log(formal); 
+}</pre>
+  </div>
+  
+<script src="/bower_components/lodash/dist/lodash.min.js"></script>
+<script src="/bower_components/d3/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/q.js/1.0.1/q.js"></script>
+<script src="/scripts/draw-scope.js"></script>
+</body>
+</html>

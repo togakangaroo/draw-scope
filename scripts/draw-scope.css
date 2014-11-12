@@ -1,0 +1,24 @@
+#code {
+  position: relative;
+  transition: all 1s ease;
+  display: inline-block;
+  margin-left: 1em; }
+  #code.rotate {
+    transform: rotate(90deg) translate(20px, 0);
+    transform-origin: 50%; }
+  #code > * {
+    display: block; }
+  #code > pre {
+    padding: 0 0 0 10px;
+    margin: 0;
+    display: inline-block; }
+  #code > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    padding: 0;
+    margin: 0; }
+
+.actions, .variables {
+  margin-bottom: 25px; }
